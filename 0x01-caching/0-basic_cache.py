@@ -15,9 +15,9 @@ class BasicCache(BaseCaching):
         """ a function that adds key and value
         to the cache_data
         """
-        self.cache_data[key] = item
         if key is None or item is None:
             return
+        self.cache_data[key] = item
 
     def get(self, key):
         """
